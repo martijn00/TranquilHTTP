@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/mvanbeusekom/TranquilHTTP</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial version containing support for GET and POST HTTP requests.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>HTTPClient HTTP Fusillade ModernHttpClient Opinionated WebApi REST JSON</tags>
+  </metadata>
+</package>
