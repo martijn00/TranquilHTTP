@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>tranquilhttp</id>
-    <version>0.1.0.2</version>
-    <title>Tranquil HTTP</title>
+    <id>TranquilHTTP</id>
+    <version>0.1.0.3</version>
+    <title>TranquilHTTP for Xamarin and Windows</title>
     <authors>Maurits van Beusekom</authors>
     <owners>Maurits van Beusekom</owners>
     <projectUrl>https://github.com/mvanbeusekom/TranquilHTTP</projectUrl>
