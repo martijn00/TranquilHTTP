@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <id>tranquilhttp</id>
+    <version>0.1.0.2</version>
+    <title>Tranquil HTTP</title>
+    <authors>Maurits van Beusekom</authors>
+    <owners>Maurits van Beusekom</owners>
     <projectUrl>https://github.com/mvanbeusekom/TranquilHTTP</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Tranquil HTTP is a C# HTTP library for Mobile Development aiming to make it really easy to solve complex HTTP communication scenarios.</description>
     <releaseNotes>Initial version containing support for GET and POST HTTP requests.</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>HTTPClient HTTP Fusillade ModernHttpClient Opinionated WebApi REST JSON</tags>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tranquil HTTP", "Tranquil HTTP\Tranquil HTTP.csproj", "{B4ED56EE-CBC1-4D5F-B9A8-CF579968D928}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tranquil HTTP", "TranquilHTTP\TranquilHTTP.csproj", "{B4ED56EE-CBC1-4D5F-B9A8-CF579968D928}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,3 +8,6 @@
 /Tranquil HTTP/obj
 *.user
 *.nupkg
+/TranquilHTTP/bin
+/TranquilHTTP/obj/Debug
+/TranquilHTTP/obj/Release
