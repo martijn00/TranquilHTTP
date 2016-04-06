@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>tranquilhttp</id>
-    <version>0.1.0.2</version>
+    <version>0.1.0.4</version>
     <title>Tranquil HTTP</title>
     <authors>Maurits van Beusekom</authors>
     <owners>Maurits van Beusekom</owners>
