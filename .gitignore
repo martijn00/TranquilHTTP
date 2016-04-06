@@ -6,3 +6,5 @@
 /packages
 /Tranquil HTTP/bin
 /Tranquil HTTP/obj
+*.user
+*.nupkg
