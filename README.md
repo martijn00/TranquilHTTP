@@ -7,4 +7,6 @@ The idea of Tranquil HTTP is heavily based on the article "[Resilient network se
 
 ## Installation
 You can install Tranquil HTTP through NuGet. Simply run the following command in the [Package Manager Console](http://docs.nuget.org/consume/package-manager-console):
-`Install-Package TranquilHTTP
+```
+Install-Package TranquilHTTP
+```
