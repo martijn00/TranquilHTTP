@@ -91,13 +91,21 @@ namespace TranquilHTTP
             return await HttpResponseResolver.ResolveHttpResponseAsync<TResult>(response);
         }
 
+        public async Task<TResult> PostAsync<TResult>(Priority priority, string path)
+        {
+            return await PostAsync<object, TResult>(priority, path, null);
+        }
+
         public async Task<TResult> PostAsync<TContent, TResult>(Priority priority, string path, TContent content)
         {
             var httpClient = GetWebApiClient(priority);
 
             SetHttpRequestHeaders(httpClient);
 
-            var httpContent = HttpContentResolver.ResolveHttpContent(content);
+            HttpContent httpContent = null;
+
+            if(content != null)
+                httpContent = HttpContentResolver.ResolveHttpContent(content);
 
             var response = await httpClient
                 .PostAsync(path, httpContent)
