@@ -14,6 +14,7 @@ namespace TranquilHTTP
 
         Task<TResult> GetAsync<TResult>(Priority priority, string path, CancellationToken? cancellationToken = null);
 
+        Task<TResult> PostAsync<TResult>(Priority priority, string path);
         Task<TResult> PostAsync<TContent, TResult>(Priority priority, string path, TContent content);
     }
 }
