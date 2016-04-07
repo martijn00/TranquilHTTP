@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>TranquilHTTP</id>
-    <version>0.1.0.4</version>
+    <version>0.1.0.5</version>
     <title>TranquilHTTP for Xamarin and Windows</title>
     <authors>Maurits van Beusekom</authors>
     <owners>Maurits van Beusekom</owners>
