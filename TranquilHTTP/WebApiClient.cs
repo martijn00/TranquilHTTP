@@ -91,12 +91,7 @@ namespace TranquilHTTP
             return await HttpResponseResolver.ResolveHttpResponseAsync<TResult>(response);
         }
 
-        public async Task<TResult> PostAsync<TResult>(Priority priority, string path)
-        {
-            return await PostAsync<object, TResult>(priority, path, null);
-        }
-
-        public async Task<TResult> PostAsync<TContent, TResult>(Priority priority, string path, TContent content)
+        public async Task<TResult> PostAsync<TContent, TResult>(Priority priority, string path, TContent content = default(TContent))
         {
             var httpClient = GetWebApiClient(priority);
 
@@ -110,6 +105,37 @@ namespace TranquilHTTP
             var response = await httpClient
                 .PostAsync(path, httpContent)
                 .ConfigureAwait(false);
+
+            return await HttpResponseResolver.ResolveHttpResponseAsync<TResult>(response);
+        }
+
+        public async Task<TResult> PutAsync<TContent, TResult>(Priority priority, string path, TContent content = default(TContent))
+        {
+            var httpClient = GetWebApiClient(priority);
+
+            SetHttpRequestHeaders(httpClient);
+
+            HttpContent httpContent = null;
+
+            if(content != null)
+                httpContent = HttpContentResolver.ResolveHttpContent(content);
+
+            var response = await httpClient
+                .PutAsync(path, httpContent)
+                .ConfigureAwait(false);
+
+            return await HttpResponseResolver.ResolveHttpResponseAsync<TResult>(response);
+        }
+
+        public async Task<TResult> DeleteAsync<TContent, TResult>(Priority priority, string path, CancellationToken? cancellationToken = null)
+        {
+            var httpClient = GetWebApiClient(priority);
+
+            SetHttpRequestHeaders(httpClient);
+
+            var response = cancellationToken == null
+                ? await httpClient.DeleteAsync(path).ConfigureAwait(false)
+                : await httpClient.DeleteAsync(path, (CancellationToken)cancellationToken).ConfigureAwait(false);
 
             return await HttpResponseResolver.ResolveHttpResponseAsync<TResult>(response);
         }
